@@ -1,14 +1,14 @@
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: rgba(255, 255, 255, 0.6);
-  --black-color: #000000;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --secodary-accent: #188ce8;
   --primary-bgc: #ffffff;
   --secondary-bgc: #2f303a;
   --tertiary-bgc: #f5f4fa;
 }
+/* --header-border: 1px solid #ececec;
+  --portfolio-border: 1px solid #eeeeee; */
 
 body {
   font-family: Roboto, sans-serif;
@@ -16,7 +16,20 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* HEADER  */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* ---------------ШАПКА-------------  */
 
 .header {
   font-weight: 500;
@@ -27,7 +40,7 @@ body {
 .footer-logo,
 .logo {
   text-decoration: none;
-  color: var(--black-color);
+  color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -65,9 +78,9 @@ body {
   color: var(--accent-color);
 }
 
-/* HERO  */
+/* ---------------ГЕРОЙ-------------  */
 .hero {
-  color: var(--primary-bgc);
+  color: #ffffff;
   background-color: var(--secondary-bgc);
 }
 
@@ -82,7 +95,8 @@ body {
 
 .hero-btn {
   background: var(--accent-color);
-  color: var(--primary-bgc);
+  color: #ffffff;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -91,10 +105,10 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--secodary-accent);
+  background-color: #188ce8;
 }
 
-/* Особенности  */
+/* -------------ОСОБЕННОСТИ-----------  */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -123,9 +137,9 @@ body {
   text-transform: uppercase;
 }
 
-/* Деятельность + Команда */
+/* ----------ДЕЯТЕЛЬНОСТЬ + КОМАНДА---------  */
 
-.studio-title {
+.title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -157,7 +171,7 @@ body {
   text-align: center;
 }
 
-/* ПОРТФОЛИО  */
+/* ---------------ПОРТФОЛИО-------------  */
 .btn {
   color: var(--title-text-color);
   background-color: var(--tertiary-bgc);
@@ -171,7 +185,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-  color: var(--primary-bgc);
+  color: #ffffff;
   background: var(--accent-color);
 }
 
@@ -194,18 +208,18 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* ФУТЕР  */
+/* ---------------ФУТЕР-------------  */
 
 .footer {
   background-color: var(--secondary-bgc);
 }
 
 .footer-logo {
-  color: var(--primary-bgc);
+  color: #ffffff;
 }
 
 .adress {
-  color: var(--primary-bgc);
+  color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
