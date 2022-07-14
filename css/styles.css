@@ -34,6 +34,9 @@ ul {
   text-decoration: none;
 }
 
+.section {
+  padding: 94px 0;
+}
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -157,7 +160,6 @@ ul {
 
 /* -------------ОСОБЕННОСТИ-----------  */
 .features {
-  padding: 94px 0;
 }
 
 .visually-hidden {
@@ -203,7 +205,7 @@ ul {
 
 /* ----------ACTIVETY ---------  */
 .activity {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .title {
   margin-bottom: 50px;
@@ -225,8 +227,6 @@ ul {
 /* ----------TEAM ---------  */
 
 .team {
-  padding: 94px 0;
-
   background-color: var(--tertiary-bgc);
 }
 
@@ -236,8 +236,12 @@ ul {
 
 .team-list-item {
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--primary-bgc);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list-item:not(:nth-child(1n + 4)) {
@@ -262,7 +266,6 @@ ul {
 
 /* ---------------ПОРТФОЛИО-------------  */
 .content {
-  padding: 94px 0;
 }
 .btn-list {
   display: flex;
@@ -323,9 +326,19 @@ ul {
   color: var(--primary-text-color);
 }
 
+.item-img-no-gap {
+  display: block;
+}
+
+.item-border {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .portfolio-list-title {
-  margin-top: 20px;
   margin-bottom: 4px;
+  padding-top: 20px;
   padding-left: 24px;
 
   color: var(--title-text-color);
