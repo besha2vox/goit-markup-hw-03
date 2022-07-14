@@ -359,11 +359,10 @@ ul {
 }
 
 .footer-logo {
-  margin-bottom: 20px;
-
   color: #ffffff;
 }
 .address {
+  margin-top: 20px;
   font-style: normal;
 }
 
