@@ -7,6 +7,7 @@
   --secondary-bgc: #2f303a;
   --tertiary-bgc: #f5f4fa;
 }
+
 /* --header-border: 1px solid #ececec;
   --portfolio-border: 1px solid #eeeeee; */
 
@@ -23,21 +24,41 @@ p,
 ul {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
 /* ---------------ШАПКА-------------  */
 
-.header {
+.page-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.footer-logo,
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.navigation,
+.nav-list,
+.contacts-list {
+  display: inherit;
+  align-items: inherit;
+}
+
 .logo {
   text-decoration: none;
   color: #000000;
@@ -47,25 +68,36 @@ ul {
   line-height: 1.19;
 }
 
+.header-logo {
+  margin-right: 93px;
+}
+
 .blue-logo {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-list-link {
+  display: block;
+  padding: 32px 0;
+
   color: var(--title-text-color);
   letter-spacing: 0.02em;
 }
 
-.contacts-list {
-  list-style-type: none;
+.current {
+  color: var(--accent-color);
 }
 
-.link {
-  text-decoration: none;
+.contacts-list {
+  margin-left: auto;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-list-link {
@@ -80,12 +112,18 @@ ul {
 
 /* ---------------ГЕРОЙ-------------  */
 .hero {
+  text-align: center;
+
   color: #ffffff;
   background-color: var(--secondary-bgc);
 }
 
+.hero-container {
+}
+
 .hero-title {
-  text-align: center;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -109,6 +147,10 @@ ul {
 }
 
 /* -------------ОСОБЕННОСТИ-----------  */
+.features {
+  padding: 94px 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -123,13 +165,26 @@ ul {
 }
 
 .feature-list {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style-type: none;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
 
+.feature-list-item {
+  max-width: 270px;
+}
+
+.feature-list-item:not(:nth-child(1n + 4)) {
+  margin-right: 30px;
+}
+
 .feature-list-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -137,28 +192,53 @@ ul {
   text-transform: uppercase;
 }
 
-/* ----------ДЕЯТЕЛЬНОСТЬ + КОМАНДА---------  */
-
+/* ----------ACTIVETY ---------  */
+.activity {
+  padding-bottom: 94px;
+}
 .title {
+  margin-bottom: 50px;
+  text-align: center;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
 
+.activity-list {
+  display: flex;
+}
+
+.activity-list-item:not(:nth-child(1n + 3)) {
+  margin-right: 30px;
+}
+/* ----------TEAM ---------  */
+
 .team {
+  padding: 94px 0;
+
   background-color: var(--tertiary-bgc);
 }
 
 .team-list {
-  list-style-type: none;
+  display: flex;
 }
 
 .team-list-item {
+  padding-bottom: 30px;
+
   background-color: var(--primary-bgc);
 }
 
+.team-list-item:not(:nth-child(1n + 4)) {
+  margin-right: 30px;
+}
+
 .team-list-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -211,24 +291,30 @@ ul {
 /* ---------------ФУТЕР-------------  */
 
 .footer {
+  padding: 60px 0;
+
   background-color: var(--secondary-bgc);
 }
 
 .footer-logo {
+  margin-bottom: 20px;
+
   color: #ffffff;
 }
-
-.adress {
-  color: #ffffff;
+.address {
   font-style: normal;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.physical-adress {
+  color: #ffffff;
   font-size: 14px;
   line-height: 1.7;
 }
 
 .contact-list-link {
   color: var(--secondary-text-color);
-}
-
-.active-page {
-  color: var(--accent-color);
 }
