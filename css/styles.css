@@ -6,6 +6,7 @@
   --primary-bgc: #ffffff;
   --secondary-bgc: #2f303a;
   --tertiary-bgc: #f5f4fa;
+  --card-set-gap: 30px;
 }
 
 /* --header-border: 1px solid #ececec;
@@ -24,6 +25,10 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -127,7 +132,7 @@ ul {
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin-bottom: var(--card-set-gap);
 
   font-weight: 900;
   font-size: 44px;
@@ -190,7 +195,7 @@ ul {
 }
 
 .feature-list-item:not(:nth-child(1n + 4)) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 .feature-list-title {
@@ -222,7 +227,7 @@ ul {
 }
 
 .activity-list-item:not(:nth-child(1n + 3)) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 /* ----------TEAM ---------  */
 
@@ -235,7 +240,7 @@ ul {
 }
 
 .team-list-item {
-  padding-bottom: 30px;
+  padding-bottom: var(--card-set-gap);
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--primary-bgc);
@@ -245,11 +250,11 @@ ul {
 }
 
 .team-list-item:not(:nth-child(1n + 4)) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 .team-list-title {
-  margin-top: 30px;
+  margin-top: var(--card-set-gap);
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -304,41 +309,36 @@ ul {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
 .portfolio-list-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-right: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
   padding-bottom: 20px;
 
   font-size: 16px;
   line-height: 1.9;
 }
-
+/* 
 .portfolio-list-item:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 .portfolio-list-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
+  margin-bottom: var(--card-set-gap);
+} */
 
-.portfolio-list-link {
-  text-decoration: none;
-  color: var(--primary-text-color);
-}
-
-.item-img-no-gap {
-  display: block;
-}
-
-.item-border {
+.card-content {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
 .portfolio-list-title {
   margin-bottom: 4px;
-  padding-top: 20px;
-  padding-left: 24px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -348,7 +348,6 @@ ul {
 }
 
 .portfolio-list-description {
-  padding-left: 24px;
 }
 /* ---------------ФУТЕР-------------  */
 
