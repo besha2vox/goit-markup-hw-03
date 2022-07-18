@@ -151,7 +151,6 @@ img {
 
   background: var(--accent-color);
   color: var(--rare-text-color);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -295,7 +294,6 @@ img {
 
   color: var(--title-text-color);
   background-color: var(--tertiary-bgc);
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
