@@ -129,6 +129,7 @@ img {
 /* ---------------ГЕРОЙ-------------  */
 .hero {
   text-align: center;
+  padding: 200px 0;
 
   color: var(--rare-text-color);
   background-color: var(--secondary-bgc);
