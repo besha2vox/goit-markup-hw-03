@@ -327,7 +327,6 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
-  padding-bottom: 20px;
 }
 /* 
 .portfolio-list-item:not(:nth-child(3n + 3)) {
