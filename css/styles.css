@@ -328,9 +328,6 @@ img {
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
   padding-bottom: 20px;
-
-  font-size: 16px;
-  line-height: 1.9;
 }
 /* 
 .portfolio-list-item:not(:nth-child(3n + 3)) {
@@ -359,6 +356,8 @@ img {
 }
 
 .portfolio-list-description {
+  font-size: 16px;
+  line-height: 1.9;
 }
 /* ---------------ФУТЕР-------------  */
 
